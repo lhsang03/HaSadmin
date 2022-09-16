@@ -1,0 +1,66 @@
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  width: 30%;
+  border: 10px;
+}
+.content {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.logoutPopup > .close {
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+  z-index: 1;
+}
+.logoutButton {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.logout {
+  background-color: rgb(245, 52, 52);
+}
+
+.navButton {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ==================== MEDIA QUERIES (Iphone 12prm) ==================== */
+@media screen and (max-width: 430px) {
+  .logoutPopup {
+    width: fit-content !important;
+    position: relative;
+  }
+
+  .logoutPopup > .close {
+    right: -10px;
+  }
+
+  .content {
+    width: fit-content;
+    border-radius: 10px;
+  }
+
+  .logoutButton {
+    display: flex;
+  }
+}
